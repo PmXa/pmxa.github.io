@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    background-color: whitesmoke;
+    background-image: radial-gradient(circle at center,LavenderBlush 40%,PowderBlue);
     display: flex;
         align-items: center;
         justify-content: center;
@@ -75,11 +75,11 @@ body {
     text-align: center;
 }
 
-.content p {
+.content ul,p {
     color: slategrey;
     font-size: 1.4rem;
     line-height: 1.5;
-    margin: 1rem;
+    margin: 1.5rem;
     text-align: center;
     width: 20rem;
 }
