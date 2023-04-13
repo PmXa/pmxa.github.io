@@ -1,0 +1,133 @@
+/* Normalize */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* General elements */
+
+:root {
+    --card-bg: white;
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    height: 100vh;
+}
+
+/* Card styles */
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    height: 40rem;
+    width: 30rem;
+}
+
+#bg-figure {
+    height: 12rem;
+    overflow: hidden;
+}
+
+#bg-image {
+    height: 12rem;
+}
+
+#profile-figure {
+    border: 5px solid var(--card-bg);
+    height: 10rem;
+    width: 10rem;
+    z-index: 10;
+    border-radius: 50%;
+    position: absolute;
+        left: calc(50% - 5rem);
+        top: calc(12rem - 5rem);
+}
+
+#profile-image {
+    border-radius: 50%;
+    width: calc(10rem - 10px);
+    z-index: 10;
+}
+
+.content {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+    height: 17.5rem;
+    margin-top: 6rem;
+}
+
+.content h2 {
+    color: steelblue;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.content p {
+    color: slategrey;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin: 1rem;
+    text-align: center;
+    width: 20rem;
+}
+
+.location {
+    display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    font-size: 1.2rem;
+    height: 10rem;
+    width: 100%;
+}
+
+.location-details {
+    display: flex;
+        align-items: center;
+}
+
+.location-details a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.location-details a:hover {
+    color: cornflowerblue;
+}
+
+.location-details img {
+    height: 1.5rem;
+}
+
+.location-details h3 {
+    margin: 0 0.5rem;
+}
+
+.social-media {
+    display: flex;
+        align-items: center;
+        justify-content: space-around;
+}
+
+.social-media img {
+    filter: grayscale(100%);
+    height: 3rem;
+}
+
+.social-icon:hover {
+    filter: grayscale(0%);
+    filter: saturate(200%);
+    transform: rotate(15deg);
+}
