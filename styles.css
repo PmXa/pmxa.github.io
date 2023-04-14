@@ -1,4 +1,6 @@
-/* Normalize */
+/* ---------------------------- 
+  Normalize
+---------------------------- */
 
 * {
     box-sizing: border-box;
@@ -24,7 +26,9 @@ body {
     height: 100vh;
 }
 
-/* Card styles */
+/* ---------------------------- 
+  Card styles
+---------------------------- */
 
 .card {
     background-color: var(--card-bg);
@@ -131,4 +135,22 @@ body {
     filter: grayscale(0%);
     filter: saturate(120%);
     transform: rotate(15deg);
+    transition: transform 350ms;
 }
+
+/* ---------------------------- 
+  Media queries
+---------------------------- */
+
+/* Non-hover devices (touchscreens) */
+
+@media (hover: none) {
+    .social-media img {
+        filter: grayscale(0%);
+    }
+
+    .social-icon {
+        filter: saturate(120%);
+    }
+}
+
